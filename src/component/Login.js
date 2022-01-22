@@ -14,7 +14,7 @@ const Login = () => {
         <img src={process.env.PUBLIC_URL + "/assets/images/music.jpg"} />
       </button>
       <div className='bottom-img'>
-        <img src={process.env.PUBLIC_URL + "/assets/images/cassets.png"} />
+        <img src={process.env.PUBLIC_URL + "/assets/images/casset.png"} />
       </div>
     </div>
   );

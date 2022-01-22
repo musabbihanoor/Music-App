@@ -8,7 +8,7 @@ const AddSong = ({ setAddSong }) => {
           <i className='fas fa-times-circle'></i>
         </button>
         <h1>New mixtape</h1>
-        <img src={process.env.PUBLIC_URL + "/assets/images/cassets.png"}></img>
+        <img src={process.env.PUBLIC_URL + "/assets/images/casset.png"}></img>
         <span>
           <button>
             Import from{" "}

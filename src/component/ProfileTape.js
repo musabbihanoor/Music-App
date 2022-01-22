@@ -10,7 +10,7 @@ const ProfileTape = ({ index, selectedTape, setSelectedTape, setShowMain }) => {
       }}
     >
       <hr />
-      <img src={process.env.PUBLIC_URL + "/assets/images/singleCaset.png"} />
+      <img src={process.env.PUBLIC_URL + "/assets/images/single-caset.png"} />
     </div>
   );
 };

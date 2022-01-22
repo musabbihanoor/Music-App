@@ -7,7 +7,7 @@ const DashboardMain = ({ showProfile, showSong, setShowSong }) => {
       <div style={{ marginTop: 15, display: "flex" }}>
         <div>
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/singleCaset.png"}
+            src={process.env.PUBLIC_URL + "/assets/images/single-caset.png"}
           />
 
           <div>

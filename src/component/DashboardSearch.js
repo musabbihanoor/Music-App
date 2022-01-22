@@ -8,14 +8,14 @@ const DashboardSearch = ({ showProfile, setShowMain }) => {
       </button>
       <h1>Mixtapes</h1>
       <div className='tapes'>
-        <img src={process.env.PUBLIC_URL + "/assets/images/singleCaset.png"} />
-        <img src={process.env.PUBLIC_URL + "/assets/images/singleCaset.png"} />
-        <img src={process.env.PUBLIC_URL + "/assets/images/singleCaset.png"} />
-        <img src={process.env.PUBLIC_URL + "/assets/images/singleCaset.png"} />
-        <img src={process.env.PUBLIC_URL + "/assets/images/singleCaset.png"} />
-        <img src={process.env.PUBLIC_URL + "/assets/images/singleCaset.png"} />
-        <img src={process.env.PUBLIC_URL + "/assets/images/singleCaset.png"} />
-        <img src={process.env.PUBLIC_URL + "/assets/images/singleCaset.png"} />
+        <img src={process.env.PUBLIC_URL + "/assets/images/single-caset.png"} />
+        <img src={process.env.PUBLIC_URL + "/assets/images/single-caset.png"} />
+        <img src={process.env.PUBLIC_URL + "/assets/images/single-caset.png"} />
+        <img src={process.env.PUBLIC_URL + "/assets/images/single-caset.png"} />
+        <img src={process.env.PUBLIC_URL + "/assets/images/single-caset.png"} />
+        <img src={process.env.PUBLIC_URL + "/assets/images/single-caset.png"} />
+        <img src={process.env.PUBLIC_URL + "/assets/images/single-caset.png"} />
+        <img src={process.env.PUBLIC_URL + "/assets/images/single-caset.png"} />
       </div>
       <h1>Profile</h1>
       <div className='profiles'>
