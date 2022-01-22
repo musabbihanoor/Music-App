@@ -6,12 +6,16 @@ const Login = () => {
       <h1>MIXT</h1>
       <h2>SignUp</h2>
       <button>
-        <a href='/dashboard'>Connect</a>
-        <img src={process.env.PUBLIC_URL + "/assets/images/spotify.png"} />
+        <a href='/dashboard'>
+          Connect{" "}
+          <img src={process.env.PUBLIC_URL + "/assets/images/spotify.png"} />
+        </a>
       </button>
       <button>
-        <a href='/dashboard'>Connect</a>
-        <img src={process.env.PUBLIC_URL + "/assets/images/music.jpg"} />
+        <a href='/dashboard'>
+          Connect
+          <img src={process.env.PUBLIC_URL + "/assets/images/music.jpg"} />
+        </a>
       </button>
       <div className='bottom-img'>
         <img src={process.env.PUBLIC_URL + "/assets/images/casset.png"} />

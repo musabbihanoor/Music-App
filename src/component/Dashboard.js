@@ -38,6 +38,10 @@ export const Dashboard = () => {
           <div className='option-container side-button options-text'>
             <label className='options-text'>Tagged</label>
           </div>
+
+          <button className='setting'>
+            <i className='fas fa-cog'></i>
+          </button>
         </aside>
 
         <section className='body-section'>
