@@ -53,10 +53,10 @@ export const Dashboard = () => {
               placeholder='Search'
             />
             <div className='search-container'>
-              <img
+              {/* <img
                 className='search-icon'
                 src={process.env.PUBLIC_URL + "/assets/images/search.png"}
-              />
+              /> */}
             </div>
             <div className='filter-container'>
               <img
