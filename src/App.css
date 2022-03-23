@@ -41,7 +41,8 @@
   margin-top: 70px;
 }
 
-.login button {
+.login button,
+button.apple {
   width: 250px;
   display: flex;
   justify-content: center;
@@ -56,21 +57,38 @@
   transition: all 0.3s ease-in;
 }
 
+button.apple {
+  font-size: 1rem;
+  width: auto;
+  padding: 0 20px;
+  background-color: #404040;
+}
+
 .login button:hover {
   background-color: #fff;
 }
 
-.login button img {
+button.apple:hover {
+  background-color: #6150ae;
+}
+
+.login button img,
+button.apple img {
   width: 30px;
   margin-left: 5px;
 }
-.login button a {
+.login button a,
+button.apple a {
   text-decoration: none;
   color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+button.apple a {
+  color: #fff;
 }
 
 div.absolute {
@@ -276,7 +294,8 @@ div.profile.hide {
   color: #6150ae;
 }
 
-.profile button.edit {
+.profile button.edit,
+.profile button.follow {
   border: none;
   padding: 5px 15px;
   border-radius: 20px;
@@ -287,7 +306,35 @@ div.profile.hide {
   cursor: pointer;
 }
 
-.profile button.edit:hover {
+.profile span {
+  display: flex;
+}
+
+.profile span div {
+  margin: 20px 10px 0;
+}
+
+.profile span h3,
+.profile span h4 {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.profile span h3 {
+  color: #6150ae;
+}
+
+.profile button.follow {
+  align-self: center;
+  margin-right: 0;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.profile button.edit:hover,
+.profile button.follow:hover {
   background-color: #6150ae;
   color: #fff;
 }
@@ -382,17 +429,18 @@ div.profile.hide {
   text-align: center;
 }
 
-.dashboard-search button {
+button.back {
   margin-top: 20px;
   background-color: transparent;
   border: none;
   font-size: 2rem;
   color: #404040;
   cursor: pointer;
+  margin-right: 10px;
   transition: all 0.3s ease-in;
 }
 
-.dashboard-search button:hover {
+button.back:hover {
   color: #6150ae;
 }
 
@@ -619,4 +667,108 @@ div.profile.hide {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.playlist .details {
+  display: flex;
+  margin: 50px 0;
+  align-items: flex-end;
+}
+
+.playlist .details img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+/* .playlist .info {
+  flex: 1;
+} */
+
+.playlist .info img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.playlist .info h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+}
+
+.playlist .info h1 {
+  color: #fff;
+  font-size: 34px;
+  margin: 10px 0;
+}
+
+.playlist span {
+  display: flex;
+  align-items: center;
+}
+
+.playlist span p {
+  display: flex;
+  color: #fff;
+  font-weight: 700;
+}
+
+.playlist span p span {
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.playlist table {
+  width: 100%;
+}
+
+.playlist th {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.playlist td img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.playlist td span {
+  align-items: center;
+}
+
+.playlist td h4,
+.playlist td h3 {
+  margin: 0;
+  text-align: left;
+  color: #fff;
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+.playlist td {
+  color: #fff;
+}
+
+.playlist td button {
+  background-color: #465a61;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.playlist td button:hover {
+  background-color: #2e3c40;
 }

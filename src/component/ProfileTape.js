@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-const ProfileTape = ({ index, selectedTape, setSelectedTape, setShowMain }) => {
+const ProfileTape = ({ index, selectedTape, setSelectedTape, setShow }) => {
   return (
     <div
       className={`item ${selectedTape === index && "selected"}`}
       onClick={() => {
         setSelectedTape(index);
-        setShowMain(false);
+        setShow("search");
       }}
     >
       <hr />

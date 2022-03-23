@@ -1,9 +1,9 @@
 import React from "react";
 
-const DashboardSearch = ({ showProfile, setShowMain }) => {
+const DashboardSearch = ({ showProfile, setShow }) => {
   return (
     <div className={`dashboard-search ${showProfile && "slide-left"} `}>
-      <button onClick={() => setShowMain(true)}>
+      <button onClick={() => setShow("main")} className='back'>
         <i className='fas fa-long-arrow-alt-left'></i>
       </button>
       <h1>Mixtapes</h1>

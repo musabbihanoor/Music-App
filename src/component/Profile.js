@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ProfileTape from "./ProfileTape";
 
-const Profile = ({ showProfile, setShowProfile, setShowMain }) => {
+const Profile = ({ showProfile, setShowProfile, setShow }) => {
   const [selectedTape, setSelectedTape] = useState(null);
   return (
     <div className={`profile ${!showProfile && "hide"}`}>
@@ -21,6 +21,17 @@ const Profile = ({ showProfile, setShowProfile, setShowMain }) => {
       ></img>
       <h1>Will Mondal</h1>
       <h2>@willmondal</h2>
+      <button className='follow'>Following</button>
+      <span>
+        <div>
+          <h3>1k</h3>
+          <h4>Followers</h4>
+        </div>
+        <div>
+          <h3>250</h3>
+          <h4>Following</h4>
+        </div>
+      </span>
       <p>
         Listens <span>145,000</span>
       </p>
@@ -34,7 +45,7 @@ const Profile = ({ showProfile, setShowProfile, setShowMain }) => {
             index={i}
             selectedTape={selectedTape}
             setSelectedTape={setSelectedTape}
-            setShowMain={setShowMain}
+            setShow={setShow}
           />
         ))}
       </div>
