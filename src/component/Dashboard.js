@@ -10,8 +10,9 @@ import PlaylistList from "./PlaylistList";
 export const Dashboard = () => {
   const [addSong, setAddSong] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
-  const [show, setShow] = useState("playlist");
+  const [show, setShow] = useState("main");
   const [showSong, setShowSong] = useState(false);
+  const [version, setVersion] = useState("apple");
 
   return (
     <Fragment>
@@ -79,9 +80,15 @@ export const Dashboard = () => {
               </button>
               <button className='apple'>
                 <a href='#'>
-                  Apple music
+                  {version === "apple" ? "Apple music" : "Spotify"}
+
                   <img
-                    src={process.env.PUBLIC_URL + "/assets/images/music.jpg"}
+                    src={
+                      process.env.PUBLIC_URL +
+                      `/assets/images/${
+                        version === "apple" ? "music.jpg" : "spotify.png"
+                      }`
+                    }
                   />
                 </a>
               </button>
@@ -98,12 +105,22 @@ export const Dashboard = () => {
             <DashboardSearch showProfile={showProfile} setShow={setShow} />
           )}
           {show === "playlist" && (
-            <Playlist showProfile={showProfile} setShow={setShow} />
+            <Playlist
+              showProfile={showProfile}
+              setShow={setShow}
+              version={version}
+            />
           )}
         </section>
       </section>
 
-      {addSong && <AddSong setAddSong={setAddSong} />}
+      {addSong && (
+        <AddSong
+          setAddSong={setAddSong}
+          setShow={setShow}
+          setVersion={setVersion}
+        />
+      )}
       <Profile
         showProfile={showProfile}
         setShowProfile={setShowProfile}
